@@ -21,4 +21,48 @@ public class Cliente {
         System.out.println("Telefono-: " + this.telefono);
     }
 
+    String getNombre() {
+        return this.nombre;
+    }
+
+    void setNombre(String nombre) throws Exception {
+        if (nombre == null || nombre.isBlank()) {
+            throw new Exception("El nombre no puede ser vacio.");
+        }
+        this.nombre = nombre;
+    }
+
+    String getRtn() {
+        return this.rtn;
+    }
+
+    void setRtn(String rtn) throws Exception {
+        if (rtn == null || rtn.isBlank()) {
+            throw new Exception("El RTN no puede ser vacio.");
+        }
+        this.rtn = rtn;
+    }
+
+    String getDireccion() {
+        return this.direccion;
+    }
+
+    void setDireccion(String direccion) throws Exception {
+        if (direccion == null || direccion.isBlank()) {
+            throw new Exception("La direccion no puede ser vacio.");
+        }
+        this.direccion = direccion;
+    }
+
+    String getTelefono() {
+        return this.telefono;
+    }
+
+    void setTelefono(String telefono) throws Exception {
+        if (telefono == null || telefono.isBlank()) {
+            throw new Exception("El telefono no puede ser vacio.");
+        }
+        this.telefono = telefono;
+    }
+
 }
